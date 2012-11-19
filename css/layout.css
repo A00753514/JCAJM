@@ -1,0 +1,94 @@
+/*
+HTML selectors
+-----------------------------------------
+*/
+body{
+		font-family: Verdana, Arial, sans-serif;
+		margin: 0px; /* takes the top element to the very top of the browser */
+}
+
+header{
+		background-color: red;
+}
+
+
+
+footer{
+		background-color: green;
+}
+
+
+
+
+
+
+
+/*
+ ID selectors
+-----------------------------------------
+*/
+#container{
+}
+
+#main_nav ul{
+		border: 1px solid black;
+		list-style: none;
+}
+
+#main_nav li{
+		display: inline;
+}
+
+#main_nav a{
+		text-decoration: none;
+}
+
+
+
+
+
+#lecture_nav{
+		background-color: yellow;
+		float: left;
+		width: 250px;
+}
+
+#lecture_nav ul{
+		text-decoration: none;
+		list-style: none;
+}
+
+#lecture_nav a{
+		text-decoration: none;
+}
+
+
+
+
+#main_content{
+		position: relative;
+		margin-left: 260px;
+}
+
+/*
+ Class selectors
+-----------------------------------------
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+ selectors
+-----------------------------------------
+*/
