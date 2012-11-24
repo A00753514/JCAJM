@@ -31,22 +31,22 @@
       <!--Horizontal Navigation-->
       <nav id="main_nav" class="jqueryslidemenu">
         <ul>
-          <li><a href="#">Home</a></li>
+          <li><a href="index.shtml">Home</a></li>
           <li><a href="#">Current</a></li>
           <li><a href="#">Lectures</a>
             <ul>
-              <li><a href="#">01 | introduction</a></li>
-              <li><a href="#">02 | tools & standards</a></li>
-              <li><a href="#">03 | HTML 5 & SEO</a></li>
-              <li><a href="#">04 | css concepts</a></li>
-              <li><a href="#">05 | more css</a></li>
-              <li><a href="#">06 | CSS and SSIs</a></li>
-              <li><a href="#">07 | template development</a></li>
-              <li><a href="#">09 | methodology</a></li>
-              <li><a href="#">10 | jQuery / Git</a></li>
+              <li><a href="index.shtml?week=01">01 | introduction</a></li>
+              <li><a href="index.shtml?week=02">02 | tools & standards</a></li>
+              <li><a href="index.shtml?week=03">03 | HTML 5 & SEO</a></li>
+              <li><a href="index.shtml?week=04">04 | css concepts</a></li>
+              <li><a href="index.shtml?week=05">05 | more css</a></li>
+              <li><a href="index.shtml?week=06">06 | CSS and SSIs</a></li>
+              <li><a href="index.shtml?week=07">07 | template development</a></li>
+              <li><a href="index.shtml?week=09">09 | methodology</a></li>
+              <li><a href="index.shtml?week=10">10 | jQuery / Git</a></li>
             </ul>
           </li>
-          <li><a href="#">Blog</a></li>
+          <li><a href="http://jcajm.tumblr.com/">Blog</a></li>
         </ul>
         <br style="clear: left" />
       </nav>
