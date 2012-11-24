@@ -17,12 +17,6 @@ footer{
 		background-color: green;
 }
 
-
-
-
-
-
-
 /*
  ID selectors
 -----------------------------------------
@@ -44,10 +38,7 @@ footer{
 }
 
 
-
-
-
-#lecture_nav{
+#toc_nav{
 		background-color: yellow;
 		float: left;
 		width: 250px;

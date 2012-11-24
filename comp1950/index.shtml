@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>JCAJM</title>
+		<title>Comp1950</title>
+    
     <link type="text/css" rel="stylesheet" href="css/reset.css"/> <!--reset css-->
 		<link rel="stylesheet" href="css/layout.css" media="screen" />
     <link rel="icon" type="image/png" href="img/favicon.ico" /> <!--favicon-->
@@ -16,7 +17,6 @@
     <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
     <script type="text/javascript">
       menuid = "main_nav";
-      
     </script>
     <script type="text/javascript" src="script/jqueryslidemenu.js"></script>
 
@@ -51,7 +51,12 @@
         <br style="clear: left" />
       </nav>
 
-			<nav id="lecture_nav"> <!--Vertical Navigation-->
+<!--#set var="week" value="home" -->
+<!--#if expr="$QUERY_STRING = /week=(home|[0-9]{2})/" -->
+<!--#set var="week" value="$1" -->
+<!--#endif -->
+<!--#if expr="${week}!='home" -->
+      <nav id="toc_nav">
               <ul>
                 <li><a href="#" >blah1</a></li>
                 <li><a href="#" >blah2</a></li>
@@ -59,13 +64,11 @@
                 <li><a href="#" >Homework</a></li>
               </ul>
 			</nav>
-
-			<div id="main_content">
-				<section>
-					<h3>What is a Methodology?</h3>
-					<p>An organised, documented set of procedures and guidelines for one or more phases of the web development life cycle, such as analysis or design. A step-by-step "cookbook" approach for carrying out the procedure; and an objective set of criteria for determining whether the results of the procedure are of acceptable quality.<br />More than just Project Management, but it is derived from it.</p>
-				</section>
-			</div>
+<!--#endif -->
+      
+			<section id="main_content">
+        <!--#include file="lecture/${week}/content.inc" -->
+      </section>
 			
 			<footer>
 				<p>This is the footer</p>
