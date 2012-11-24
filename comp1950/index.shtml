@@ -55,15 +55,19 @@
 <!--#if expr="$QUERY_STRING = /week=(home|[0-9]{2})/" -->
 <!--#set var="week" value="$1" -->
 <!--#endif -->
-<!--#if expr="${week}!='home" -->
+
+
+<!--#if expr="${week}!='home'" -->
+
       <nav id="toc_nav">
-              <ul>
-                <li><a href="#" >blah1</a></li>
-                <li><a href="#" >blah2</a></li>
-                <li><a href="#" >blah3</a></li>
-                <li><a href="#" >Homework</a></li>
-              </ul>
+        <ul>
+          <li><a href="#" >blah1</a></li>
+          <li><a href="#" >blah2</a></li>
+          <li><a href="#" >blah3</a></li>
+          <li><a href="#" >Homework</a></li>
+        </ul>
 			</nav>
+
 <!--#endif -->
       
 			<section id="main_content">
