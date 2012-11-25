@@ -6,30 +6,13 @@
     <link type="text/css" rel="stylesheet" href="css/reset.css"/> <!--reset css-->
 		<link rel="stylesheet" href="css/layout.css" media="screen" />
     <link rel="icon" type="image/png" href="img/favicon.ico" /> <!--favicon-->
-    
-    <link rel="stylesheet" type="text/css" href="css/jqueryslidemenu.css" />
-    
-    <!--[if lte IE 7]>
-    <style type="text/css">
-      html .jqueryslidemenu{height: 1%;} /*Holly Hack for IE7 and below*/
-    </style>
-    <![endif]-->
         
     <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
     <script type="text/javascript" src="script/jquery.toc.min.js"></script>
-    <script type="text/javascript" src="script/jqueryslidemenu.js"></script>
     
-    <script type="text/javascript">
-      
-      $(function() {
-        // Menu
-        //Specify full URL to down and right arrow images (23 is padding-right to add to top level LIs with drop downs):
-        var arrowimages={down:['downarrowclass', 'img/nav/down.gif', 23], right:['img/nav/rightarrowclass', 'right.gif']};
-        jqueryslidemenu.buildmenu("main_nav", arrowimages);
-  
-      });
-    </script>
-
+    
+    <link rel="stylesheet" href="css/main_nav.css" media="screen" />
+    
 <!--#set var="week" value="home" -->
 <!--#if expr="$QUERY_STRING = /week=(home|[0-9]{2})/" -->
 <!--#set var="week" value="$1" -->
@@ -52,7 +35,6 @@
         
       });
     </script>
-
 <!--#endif -->    
     
 	</head>
@@ -62,22 +44,22 @@
 			<header>
 				<h1>logo here<h1>
 			</header>
-			
+
       <!--Horizontal Navigation-->
-      <nav id="main_nav" class="jqueryslidemenu">
-        <ul>
+      <nav id="main_nav">
+        <ul class="main_nav">
           <li><a href="index.shtml">Home</a></li>
-          <li><a href="#">Current</a></li>
-          <li><a href="#">Lectures</a>
-            <ul>
-              <li><a href="index.shtml?week=01">01 | introduction</a></li>
-              <li><a href="index.shtml?week=02">02 | tools & standards</a></li>
-              <li><a href="index.shtml?week=03">03 | HTML 5 & SEO</a></li>
-              <li><a href="index.shtml?week=04">04 | css concepts</a></li>
-              <li><a href="index.shtml?week=05">05 | more css</a></li>
-              <li><a href="index.shtml?week=06">06 | CSS and SSIs</a></li>
-              <li><a href="index.shtml?week=07">07 | template development</a></li>
-              <li><a href="index.shtml?week=09">09 | methodology</a></li>
+          <li><a href="">Current</a></li>
+          <li><a href="">Lectures</a>
+            <ul class="nav first">
+              <li><a href="<!--#if expr="${week}!='01'" -->index.shtml?week=06<!--#endif -->">01 | introduction</a></li>
+              <li><a href="<!--#if expr="${week}!='02'" -->index.shtml?week=06<!--#endif -->">02 | tools & standards</a></li>
+              <li><a href="<!--#if expr="${week}!='03'" -->index.shtml?week=06<!--#endif -->">03 | HTML 5 & SEO</a></li>
+              <li><a href="<!--#if expr="${week}!='04'" -->index.shtml?week=06<!--#endif -->">04 | css concepts</a></li>
+              <li><a href="<!--#if expr="${week}!='05'" -->index.shtml?week=06<!--#endif -->">05 | more css</a></li>
+              <li><a href="<!--#if expr="${week}!='06'" -->index.shtml?week=06<!--#endif -->">06 | CSS and SSIs</a></li>
+              <li><a href="<!--#if expr="${week}!='07'" -->index.shtml?week=07<!--#endif -->">07 | template development</a></li>
+              <li><a href="<!--#if expr="${week}!='09'" -->index.shtml?week=09<!--#endif -->">09 | methodology</a></li>
               <li><a href="index.shtml?week=10">10 | jQuery / Git</a></li>
             </ul>
           </li>
@@ -85,9 +67,7 @@
         </ul>
         <br style="clear: left" />
       </nav>
-
 <!--#if expr="${week}!='home'" -->
-
       <nav id="toc">
       </nav>
 
