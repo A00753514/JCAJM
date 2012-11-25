@@ -1,4 +1,6 @@
 <?php
+  ob_start();
+  
   require_once("script/model.php");
   
   define("HOME", "home");
