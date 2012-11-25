@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>JCAJM Rationale Page</title>
+    <link type="text/css" rel="stylesheet" href="css/reset.css"/> <!--reset css-->
+		<link rel="stylesheet" href="css/layout.css" media="screen" />
+    <link rel="icon" type="image/png" href="img/favicon.ico" /> <!--favicon-->
+    
+
+	</head>
+
+	<body>
+		<div id="container">
+			<header>
+				<h1>JCAJM Group Rationale Page</h1>
+			</header>
+			
+      <!--Navigation (this doesn't necessarily need to be a separate Nav. Use your judgement Asa-->
+      <nav id="main_nav">
+        <ul>
+          <li><a href="http://teams.thenet.ca/jcajm/">Back to Project Homepage</a></li>
+        </ul>  
+      </nav>
+
+	<div id="main_content">
+		<article>
+		<section>
+		<h2>Project Goal: </h2>
+
+			<p>The simple and straightforward design of the current COMP 1950 page is a great source of information for students of the course. <br>
+			However, our goal is to present some improvements that make that content easier to access, while also adding some features that <br>
+			hopefully make the site more intuitive for the target audience.
+			</p>
+		</section>
+		
+		<section>
+		<h3>Improvement to content access:</h3>
+		<ul>	
+			<li>Addition of drop down, horizontal navigation to unclutter the site. This will minimize the visible navigation links and let the page focus more on content. 
+			</li>
+			<li>Add a secondary, left-column navigation with a lecture-specific table of contents. This TOC will utilize HTML5 syntax and PHP script to auto populate links to the sub headings for each lecture.</li>
+			<li>Make finding current content easier, through inclusion of a link to the current week&apos;s lecture in the main navigation bar.</li>
+			<li>Re-coding of the content, using HTML5, to semantically categorize the information on each page. We have replaced the use of lists nested within lists, to the semantic use of HTML5 article and section tags.</li>
+			<li>Through this TOC, we have made these individual sub-sections within each lecture easier to find, and navigate to (ie: student will be able to jump right to the Homework section of the lecture notes).</li>
+			<li>These adjustments also make the site HTML5 compliant. </li>
+		</ul>
+		</section>
+		
+		<section>
+		<h3>Proposed Additions (proof of concept):</h3>
+		<p>(While not operational, we have proposed the inclusion of a few items that would improve the functionality of the site for both the audience and the instructor):</p>
+		<ul>	
+		<li>A separate Glossary Page, highlighting key terms &amp; concepts from each week. This page would also have anchor links, which would be linked from the TOC navigation, allowing for instant clarification of terms. </li>
+		<li>An Admin Log-in button, which would link to an included CMS, such as Drupal. This would enable easier editing of the current week&apos;s content by the instructor.</li>
+		</ul>
+		</section>
+		
+		<section>
+		<h3>Design Adjustments:</h3>
+		<ul>
+		<li>Increase in the size of section headers, further highlighting their importance to the student, and their connection with the TOC.</li>
+		<li>Using Fixed Positioning for the navigation bar on the top of the page as well as the TOC on the left.  This ensures that the user is always able to quickly navigate though both the current page and the site as a whole.  Furthermore, fixed navigation eliminates excessive scrolling upwards on a lecture page filled with notes to return to the navigation.</li>
+		</ul>
+		</section>
+		
+		</article>	
+		
+	</div><!--main_content end-->		
+
+	<footer>
+		<p>COMP1950 &copy;2012 JCAJM</p>
+	</footer>
+		</div><!--container end-->
+
+	</body>
+
+</html>

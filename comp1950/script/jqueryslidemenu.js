@@ -5,10 +5,7 @@
 *********************/
 
 //Update: April 12th, 10: Fixed compat issue with jquery 1.4x
-
-//Specify full URL to down and right arrow images (23 is padding-right to add to top level LIs with drop downs):
-var arrowimages={down:['downarrowclass', 'img/nav/down.gif', 23], right:['img/nav/rightarrowclass', 'right.gif']}
-
+   
 var jqueryslidemenu={
 
 animateduration: {over: 200, out: 100}, //duration of slide in/ out animation, in milliseconds
@@ -48,8 +45,5 @@ buildmenu:function(menuid, arrowsvar){
 		}) //end $headers.each()
 		$mainmenu.find("ul").css({display:'none', visibility:'visible'})
 	}) //end document.ready
+} 
 }
-}
-
-//build menu with ID="myslidemenu" on page:
-jqueryslidemenu.buildmenu(menuid, arrowimages)

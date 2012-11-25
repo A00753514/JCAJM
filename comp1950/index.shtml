@@ -6,6 +6,7 @@
     <link type="text/css" rel="stylesheet" href="css/reset.css"/> <!--reset css-->
 		<link rel="stylesheet" href="css/layout.css" media="screen" />
     <link rel="icon" type="image/png" href="img/favicon.ico" /> <!--favicon-->
+    
     <link rel="stylesheet" type="text/css" href="css/jqueryslidemenu.css" />
     
     <!--[if lte IE 7]>
@@ -15,15 +16,49 @@
     <![endif]-->
         
     <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
-    <script type="text/javascript">
-      menuid = "main_nav";
-    </script>
+    <script type="text/javascript" src="script/jquery.toc.min.js"></script>
     <script type="text/javascript" src="script/jqueryslidemenu.js"></script>
+    
+    <script type="text/javascript">
+      
+      $(function() {
+        // Menu
+        //Specify full URL to down and right arrow images (23 is padding-right to add to top level LIs with drop downs):
+        var arrowimages={down:['downarrowclass', 'img/nav/down.gif', 23], right:['img/nav/rightarrowclass', 'right.gif']};
+        jqueryslidemenu.buildmenu("main_nav", arrowimages);
+  
+      });
+    </script>
 
+<!--#set var="week" value="home" -->
+<!--#if expr="$QUERY_STRING = /week=(home|[0-9]{2})/" -->
+<!--#set var="week" value="$1" -->
+<!--#endif -->
+
+<!--#if expr="${week}!='home'" -->
+    <script type="text/javascript">
+      
+      $(function() {
+        // Table of contents
+        // - not displayed on home page
+        // - CSS not loaded, unless javascript active
+        
+        var tocCss = document.createElement("link");
+        tocCss.setAttribute("rel", "stylesheet");
+        tocCss.setAttribute("href", "css/layout_toc.css");
+        document.getElementsByTagName('head')[0].appendChild(tocCss);
+        $('#toc').toc({ 'selectors': 'h2'
+                      , 'container': '#main_content' });
+        
+      });
+    </script>
+
+<!--#endif -->    
+    
 	</head>
 
 	<body>
-		<div id="container">
+    <div id="container">
 			<header>
 				<h1>logo here<h1>
 			</header>
@@ -51,22 +86,10 @@
         <br style="clear: left" />
       </nav>
 
-<!--#set var="week" value="home" -->
-<!--#if expr="$QUERY_STRING = /week=(home|[0-9]{2})/" -->
-<!--#set var="week" value="$1" -->
-<!--#endif -->
-
-
 <!--#if expr="${week}!='home'" -->
 
-      <nav id="toc_nav">
-        <ul>
-          <li><a href="#" >blah1</a></li>
-          <li><a href="#" >blah2</a></li>
-          <li><a href="#" >blah3</a></li>
-          <li><a href="#" >Homework</a></li>
-        </ul>
-			</nav>
+      <nav id="toc">
+      </nav>
 
 <!--#endif -->
       

@@ -11,8 +11,6 @@ header{
 		background-color: red;
 }
 
-
-
 footer{
 		background-color: green;
 }
@@ -37,47 +35,14 @@ footer{
 		text-decoration: none;
 }
 
-
-#toc_nav{
-		background-color: yellow;
-		float: left;
-		width: 250px;
-}
-
-#lecture_nav ul{
-		text-decoration: none;
-		list-style: none;
-}
-
-#lecture_nav a{
-		text-decoration: none;
-}
-
-
-
-
 #main_content{
 		position: relative;
-		margin-left: 260px;
 }
 
 /*
  Class selectors
 -----------------------------------------
 */
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*
  selectors
