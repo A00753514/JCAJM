@@ -65,7 +65,9 @@
         <ul class="main_nav">
 <?php
 
-    echo "<li><a href=\""; if ($week != HOME) echo "index.php"; echo "\">Home</a></li>".PHP_EOL;
+    echo "<li><a href=\"";
+    if ($week != HOME) echo "index.php";
+    echo "\">Home</a></li>".PHP_EOL;
       
     if ($model->hasActiveLessons())
     {
