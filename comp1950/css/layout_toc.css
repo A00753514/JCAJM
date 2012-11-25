@@ -6,7 +6,7 @@
 */
 
 #toc {
-  visibility: hidden; 
+  display: none;
 }
 
 @media screen and (min-width: 960px)
@@ -17,10 +17,9 @@
 }
 
 #toc {
-    visibility: visible; 
+    display: block;
     position: fixed;
     top: 130px;
-    height: 100%;
     overflow: auto;
     background: #333;
     box-shadow: inset -5px 0 5px 0px #000;
